@@ -56,13 +56,13 @@
     }
   }
   .search-box {
-    @include shadow;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: absolute;
     top: 32rem;
     .search-input {
+      @include shadow;
       padding: 1.5rem;
       width: 25rem;
       border: none;

@@ -72,7 +72,6 @@ html {
 }
 
 .header .search-box {
-  box-shadow: 0.1rem 0.1rem 2rem #cccaca;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,6 +80,7 @@ html {
 }
 
 .header .search-box .search-input {
+  box-shadow: 0.1rem 0.1rem 2rem #cccaca;
   padding: 1.5rem;
   width: 25rem;
   border: none;
