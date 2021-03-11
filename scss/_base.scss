@@ -1,9 +1,11 @@
-$color-primary: rgb(226, 26, 176);
-$color-secondary: gray;
-$color-orange: rgb(255, 94, 0);
+@import "colors";
 
 $font-pt: "PT Serif";
 $font-robot: "Roboto Condensed", sans-serif;
+
+@mixin shadow {
+  box-shadow: 0.1rem 0.1rem 2rem rgb(204, 202, 202);
+}
 
 * {
   padding: 0;
@@ -11,5 +13,5 @@ $font-robot: "Roboto Condensed", sans-serif;
 }
 html {
   font-size: 62.5%;
-  margin: 5px;
+  padding: 2rem 2rem 0rem 2rem;
 }

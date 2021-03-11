@@ -1,0 +1,55 @@
+.section {
+  background-color: $color-light-gray;
+  width: 100vw;
+  height: auto;
+  margin-top: 2rem;
+  &-news {
+    font-size: 1.5rem;
+    font-family: $font-pt;
+    width: 40rem;
+    padding: 4rem;
+  }
+  &-header {
+    font-size: 3rem;
+    font-family: $font-pt;
+    padding: 10rem 0 5rem 2rem;
+  }
+  &-cards {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      width: 25rem;
+      height: 50rem;
+      border: 1px solid $color-secondary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $color-white;
+      box-shadow: 0.1rem 0.1rem 2rem rgb(204, 202, 202);
+      border: none;
+      border-radius: 2rem;
+      outline: none;
+    }
+    .image {
+      width: 45%;
+      height: 33%;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+  }
+  .content {
+    border-top: 1px solid $color-light-gray;
+    &-main {
+      font-size: 2.5rem;
+      font-family: $font-robot;
+      padding: 2rem 0rem 3rem 0rem;
+
+      letter-spacing: 0.2rem;
+    }
+    &-sub {
+      font-size: 1.5rem;
+      font-family: $font-pt;
+    }
+  }
+}
