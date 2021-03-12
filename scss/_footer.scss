@@ -1,0 +1,43 @@
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: $color-light-gray;
+
+  &-span {
+    @include position(3rem);
+    font-size: 2rem;
+    font-family: $font-pt;
+    font-weight: bold;
+    margin-top: 10rem;
+  }
+  &-items {
+    @include position(3rem);
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .item {
+      //   * @include position(3rem);
+      @include shadow;
+      width: 23rem;
+      height: 8rem;
+      background-color: $color-white;
+      margin-top: 15rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 6px;
+      .image {
+        width: 5rem;
+        height: 5rem;
+      }
+      .text {
+        font-size: 1.5rem;
+        font-family: $font-robot;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+}

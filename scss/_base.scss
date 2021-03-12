@@ -3,19 +3,32 @@
 @mixin shadow {
   box-shadow: 0.1rem 0.1rem 2rem rgb(204, 202, 202);
 }
-
-$font-pt: "PT Serif";
-$font-robot: "Roboto Condensed", sans-serif;
-
+@mixin border($border-radius) {
+  border: none;
+  border-radius: $border-radius;
+  outline: none;
+}
 @mixin shadow {
   box-shadow: 0.1rem 0.1rem 2rem rgb(204, 202, 202);
 }
+@mixin position($right) {
+  position: absolute;
+  right: $right;
+}
+// *fonts//*
+$font-pt: "PT Serif";
+$font-robot: "Roboto Condensed", sans-serif;
+// *fonts//*
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
-  padding: 2rem 2rem 0rem 2rem;
+  overflow-x: hidden;
 }

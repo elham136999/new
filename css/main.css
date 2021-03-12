@@ -1,11 +1,14 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  padding: 2rem 2rem 0rem 2rem;
+  overflow-x: hidden;
 }
 
 .header {
@@ -22,7 +25,7 @@ html {
 
 .header .logo {
   font-size: 2.5rem;
-  color: #e21ab0;
+  color: #ec26bb;
   display: flex;
 }
 
@@ -42,7 +45,7 @@ html {
   font-size: 1.75rem;
   text-decoration: none;
   padding: 0.75rem;
-  color: #e21ab0;
+  color: #ec26bb;
   transform: all 2s;
 }
 
@@ -52,7 +55,7 @@ html {
 }
 
 .header-nav .button {
-  border: 1px solid #e21ab0;
+  border: 1px solid #ec26bb;
   border-radius: 1rem;
   margin: 0 1.5rem;
   font-weight: bold;
@@ -66,7 +69,7 @@ html {
 }
 
 .header-content mark {
-  background-color: #e21ab0;
+  background-color: #ec26bb;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -81,25 +84,25 @@ html {
 
 .header .search-box .search-input {
   box-shadow: 0.1rem 0.1rem 2rem #cccaca;
-  padding: 1.5rem;
-  width: 25rem;
   border: none;
   border-radius: 5rem;
   outline: none;
+  padding: 1.5rem;
+  width: 25rem;
 }
 
-.header .search-box .fas {
+.fa-search {
   font-size: 1.5rem;
   background-color: #ff5e00;
   padding: 0.75rem;
   border-radius: 5rem;
   color: white;
   position: absolute;
-  left: 24rem;
+  left: 21rem;
 }
 
 .section {
-  background-color: #e2e0e0;
+  background-color: #eceaea;
   width: 100vw;
   height: auto;
   margin-top: 2rem;
@@ -109,7 +112,13 @@ html {
   font-size: 1.5rem;
   font-family: "PT Serif";
   width: 40rem;
-  padding: 4rem;
+  padding: 10rem 0 5rem 2rem;
+}
+
+.section .section-news span::before {
+  content: "NEWS: ";
+  color: #ec26bb;
+  font-weight: bold;
 }
 
 .section-header {
@@ -125,39 +134,112 @@ html {
 }
 
 .section-cards .card {
-  width: 25rem;
-  height: 50rem;
-  border: 1px solid gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
   box-shadow: 0.1rem 0.1rem 2rem #cccaca;
   border: none;
   border-radius: 2rem;
   outline: none;
+  width: 23rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.section-cards .card:hover {
+  background-image: linear-gradient(#ec26bb, #7d05ac);
+  color: #fff;
+  left: 50px;
+  cursor: pointer;
 }
 
 .section-cards .image {
   width: 45%;
-  height: 33%;
+  height: 45%;
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
 
 .section .content {
-  border-top: 1px solid #e2e0e0;
+  border-top: 1px solid #eceaea;
 }
 
 .section .content-main {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: "Roboto Condensed", sans-serif;
   padding: 2rem 0rem 3rem 0rem;
   letter-spacing: 0.2rem;
 }
 
 .section .content-sub {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "PT Serif";
+}
+
+.section .price-box {
+  width: 100%;
+  margin-top: 8rem;
+  opacity: 0.4;
+}
+
+.section .price-box .price {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+  background-color: #eceaea;
+  padding: 2rem 0 2.5rem 3rem;
+  font-size: 4rem;
+  color: #ec26bb;
+}
+
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: #eceaea;
+}
+
+.footer-span {
+  position: absolute;
+  right: 3rem;
+  font-size: 2rem;
+  font-family: "PT Serif";
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+.footer-items {
+  position: absolute;
+  right: 3rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-items .item {
+  box-shadow: 0.1rem 0.1rem 2rem #cccaca;
+  width: 23rem;
+  height: 8rem;
+  background-color: #fff;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.footer-items .item .image {
+  width: 5rem;
+  height: 5rem;
+}
+
+.footer-items .item .text {
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
