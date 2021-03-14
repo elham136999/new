@@ -11,10 +11,42 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 .header {
   width: 100vw;
   height: 50vh;
   position: relative;
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    width: 100%;
+    height: 50%;
+    margin: 2rem 1.5rem 0 1.5rem;
+  }
 }
 
 .header-box {
@@ -27,6 +59,12 @@ html {
   font-size: 2.5rem;
   color: #ec26bb;
   display: flex;
+}
+
+@media (max-width: 37.5em) {
+  .header .logo {
+    font-size: 2rem;
+  }
 }
 
 .header .logo-text {
@@ -57,7 +95,6 @@ html {
 .header-nav .button {
   border: 1px solid #ec26bb;
   border-radius: 1rem;
-  margin: 0 1.5rem;
   font-weight: bold;
 }
 
@@ -66,6 +103,14 @@ html {
   font-size: 1.75rem;
   margin-top: 10rem;
   font-family: "PT Serif";
+}
+
+@media (max-width: 37.5em) {
+  .header-content {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
 }
 
 .header-content mark {
@@ -79,7 +124,14 @@ html {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  top: 32rem;
+  top: 34rem;
+}
+
+@media (max-width: 37.5em) {
+  .header .search-box {
+    position: absolute;
+    top: 16rem;
+  }
 }
 
 .header .search-box .search-input {
@@ -89,6 +141,12 @@ html {
   outline: none;
   padding: 1.5rem;
   width: 25rem;
+}
+
+@media (max-width: 37.5em) {
+  .header .search-box .search-input {
+    padding: 1rem;
+  }
 }
 
 .fa-search {
@@ -108,11 +166,25 @@ html {
   margin-top: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .section {
+    margin-top: 10rem;
+  }
+}
+
 .section-news {
   font-size: 1.5rem;
   font-family: "PT Serif";
   width: 40rem;
   padding: 10rem 0 5rem 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-news {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 7rem 0 2rem 1rem;
+  }
 }
 
 .section .section-news span::before {
@@ -121,10 +193,24 @@ html {
   font-weight: bold;
 }
 
+@media (max-width: 37.5em) {
+  .section .section-news span::before {
+    font-size: 1.5rem;
+    padding: 7rem 0 2rem 1rem;
+  }
+}
+
 .section-header {
   font-size: 3rem;
   font-family: "PT Serif";
   padding: 10rem 0 5rem 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-header {
+    font-size: 1.75rem;
+    padding: 3rem;
+  }
 }
 
 .section-cards {
@@ -147,6 +233,18 @@ html {
   background-color: #fff;
 }
 
+@media (max-width: 37.5em) {
+  .section-cards .card {
+    width: 14rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .section-cards .card:hover {
   background-image: linear-gradient(#ec26bb, #7d05ac);
   color: #fff;
@@ -154,11 +252,29 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 37.5em) {
+  .section-cards .card:hover:hover {
+    background-image: linear-gradient(#ec26bb, #7d05ac);
+    color: #fff;
+    left: 50px;
+    cursor: pointer;
+  }
+}
+
 .section-cards .image {
   width: 45%;
   height: 45%;
   padding-top: 5rem;
   padding-bottom: 4rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-cards .image {
+    width: 60%;
+    height: 60%;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
 }
 
 .section .content {
@@ -172,15 +288,34 @@ html {
   letter-spacing: 0.2rem;
 }
 
+@media (max-width: 37.5em) {
+  .section .content-main {
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
 .section .content-sub {
   font-size: 1.4rem;
   font-family: "PT Serif";
+}
+
+@media (max-width: 37.5em) {
+  .section .content-sub {
+    font-size: 1rem;
+  }
 }
 
 .section .price-box {
   width: 100%;
   margin-top: 8rem;
   opacity: 0.4;
+}
+
+@media (max-width: 37.5em) {
+  .section .price-box {
+    margin-top: 2rem;
+  }
 }
 
 .section .price-box .price {
@@ -194,10 +329,25 @@ html {
   color: #ec26bb;
 }
 
+@media (max-width: 37.5em) {
+  .section .price-box .price {
+    font-size: 1.75rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+}
+
 .footer {
   width: 100vw;
   height: 50vh;
   background-color: #eceaea;
+}
+
+@media (max-width: 37.5em) {
+  .footer {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .footer-span {
@@ -207,6 +357,13 @@ html {
   font-family: "PT Serif";
   font-weight: bold;
   margin-top: 10rem;
+}
+
+@media (max-width: 37.5em) {
+  .footer-span {
+    font-size: 1.75rem;
+    margin-top: 4rem;
+  }
 }
 
 .footer-items {
@@ -231,9 +388,25 @@ html {
   border-radius: 6px;
 }
 
+@media (max-width: 37.5em) {
+  .footer-items .item {
+    width: 20rem;
+    height: 7rem;
+    margin: 10rem 0 5rem 0;
+    box-shadow: 0;
+  }
+}
+
 .footer-items .item .image {
   width: 5rem;
   height: 5rem;
+}
+
+@media (max-width: 37.5em) {
+  .footer-items .item .image {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .footer-items .item .text {
@@ -241,5 +414,11 @@ html {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (min-width: 3000px) {
+  .footer-items .item .text {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
