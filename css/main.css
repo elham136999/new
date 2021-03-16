@@ -130,7 +130,14 @@ html {
 @media (max-width: 37.5em) {
   .header .search-box {
     position: absolute;
-    top: 16rem;
+    top: 18rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .header .search-box {
+    position: absolute;
+    top: 27rem;
   }
 }
 
@@ -144,6 +151,12 @@ html {
 }
 
 @media (max-width: 37.5em) {
+  .header .search-box .search-input {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 56.25em) {
   .header .search-box .search-input {
     padding: 1rem;
   }
@@ -187,6 +200,12 @@ html {
   }
 }
 
+@media (max-width: 56.25em) {
+  .section-news {
+    font-size: 1.75rem;
+  }
+}
+
 .section .section-news span::before {
   content: "NEWS: ";
   color: #ec26bb;
@@ -210,6 +229,12 @@ html {
   .section-header {
     font-size: 1.75rem;
     padding: 3rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section-header {
+    font-size: 2rem;
   }
 }
 
@@ -237,6 +262,18 @@ html {
   .section-cards .card {
     width: 14rem;
     height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section-cards .card {
+    width: 21rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,6 +332,13 @@ html {
   }
 }
 
+@media (max-width: 56.25em) {
+  .section .content-main {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
 .section .content-sub {
   font-size: 1.4rem;
   font-family: "PT Serif";
@@ -303,6 +347,12 @@ html {
 @media (max-width: 37.5em) {
   .section .content-sub {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section .content-sub {
+    font-size: 1.5rem;
   }
 }
 
@@ -332,6 +382,14 @@ html {
 @media (max-width: 37.5em) {
   .section .price-box .price {
     font-size: 1.75rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section .price-box .price {
+    font-size: 3.5rem;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
   }
