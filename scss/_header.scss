@@ -7,6 +7,10 @@
     height: 50%;
     margin: 2rem 1.5rem 0 1.5rem;
   }
+  @include respond(tab-land) {
+    width: 100vw;
+    height: 60vh;
+  }
 
   &-box {
     display: flex;
@@ -19,6 +23,9 @@
     display: flex;
     @include respond(phone) {
       font-size: 2rem;
+    }
+    @include respond(tab-land) {
+      font-size: 2.75rem;
     }
 
     &-text {
@@ -39,6 +46,9 @@
       padding: 0.75rem;
       color: $color-primary;
       transform: all 2s;
+      @include respond(tab-land) {
+        font-size: 2.2rem;
+      }
 
       &:hover {
         color: $color-secondary;
@@ -62,6 +72,11 @@
       font-size: 1.3rem;
       width: 100%;
     }
+    @include respond(tab-land) {
+      width: 18rem;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
 
     mark {
       background-color: $color-primary;
@@ -83,6 +98,10 @@
       position: absolute;
       top: 27rem;
     }
+    @include respond(tab-land) {
+      position: absolute;
+      top: 33rem;
+    }
 
     .search-input {
       @include shadow;
@@ -95,6 +114,10 @@
       @include respond(tab-port) {
         padding: 1rem;
       }
+      @include respond(tab-land) {
+        width: 28rem;
+        padding: 1.5rem;
+      }
     }
   }
 }
@@ -106,4 +129,9 @@
   color: white;
   position: absolute;
   left: 21rem;
+  @include respond(tab-land) {
+    font-size: 2rem;
+    position: absolute;
+    left: 24rem;
+  }
 }

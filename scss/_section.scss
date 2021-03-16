@@ -21,6 +21,10 @@
     @include respond(tab-port) {
       font-size: 1.75rem;
     }
+    @include respond(tab-land) {
+      width: 45rem;
+      font-size: 2rem;
+    }
   }
   .section-news span::before {
     content: "NEWS: ";
@@ -41,6 +45,10 @@
     }
     @include respond(tab-port) {
       font-size: 2rem;
+    }
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      padding: 9rem 0 10rem 2rem;
     }
   }
   &-cards {
@@ -70,6 +78,15 @@
       @include respond(tab-port) {
         width: 21rem;
         height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      @include respond(tab-land) {
+        width: 28rem;
+        height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -121,6 +138,10 @@
         font-size: 2rem;
         padding-bottom: 1.5rem;
       }
+      @include respond(tab-land) {
+        font-size: 2.75rem;
+        padding-bottom: 2rem;
+      }
     }
     &-sub {
       font-size: 1.4rem;
@@ -130,6 +151,9 @@
       }
       @include respond(tab-port) {
         font-size: 1.5rem;
+      }
+      @include respond(tab-land) {
+        font-size: 2rem;
       }
     }
   }
@@ -155,6 +179,11 @@
       }
       @include respond(tab-port) {
         font-size: 3.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+      }
+      @include respond(tab-land) {
+        font-size: 4rem;
         padding: 1rem 1rem 1rem 1rem;
         text-align: center;
       }
