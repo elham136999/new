@@ -9,11 +9,15 @@
   outline: none;
 }
 @mixin shadow {
-  box-shadow: 0.1rem 0.1rem 2rem rgb(204, 202, 202);
+  box-shadow: 0 0.01rem 1.5rem rgb(221, 219, 219);
 }
 @mixin position($right) {
   position: absolute;
   right: $right;
+}
+@mixin hover($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
 }
 
 // * 0-600px  phone
@@ -33,29 +37,6 @@
 // *big-desk
 // 1em  16px
 
-@mixin respond($breakpoint) {
-  @if $breakpoint== phone {
-    @media (max-width: 37.5em) {
-      @content;
-    }
-  }
-  @if $breakpoint== tab-port {
-    @media (max-width: 56.25em) {
-      @content;
-    }
-  }
-  @if $breakpoint== tab-land {
-    @media (max-width: 75em) {
-      @content;
-    }
-  }
-  @if $breakpoint== big-desk {
-    @media (min-width: 112.5em) {
-      @content;
-    }
-  }
-}
-
 // *fonts//*
 $font-pt: "PT Serif";
 $font-robot: "Roboto Condensed", sans-serif;
@@ -70,19 +51,5 @@ $font-robot: "Roboto Condensed", sans-serif;
 }
 
 html {
-  font-size: 62.5%; //rem=10px 10/16=62.5%
-  overflow-x: hidden;
-
-  @include respond(phone) {
-    font-size: 30%; //1rem=8px 8/16=50%
-  }
-  @include respond(tab-port) {
-    font-size: 60%; //1rem=9px 9/16=60%
-  }
-  @include respond(tab-land) {
-    font-size: 56.25%;
-  }
-  @include respond(big-desk) {
-    font-size: 70%; //1rem=12px 12/16=70%
-  }
+  font-size: 100%;
 }
