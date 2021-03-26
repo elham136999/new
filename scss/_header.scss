@@ -1,13 +1,28 @@
 .header {
+  //  * &-box {
+  //  * @media screen and (min-width: 1024px) {
+  // *  display: flex;
+  // *  flex-direction: row;
+  //  * justify-content: space-between;
+  // *  }
+  // *  }
   .logo {
     font-size: 3rem;
     color: $color-orange;
     text-align: center;
     margin: 1rem auto;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+    //  * @media screen and (min-width: 1024px) {
+    // *  font-size: 2.5rem;
+    // *  text-align: left;
+    // *}
 
     &-text {
       font-family: $font-pt;
+      font-size: 2.3rem;
     }
   }
   &-nav {
@@ -29,6 +44,15 @@
           margin: 1.5rem 0;
           text-align: center;
           transition: 1s;
+          @media screen and (min-width: 768px) {
+            font-size: 1.75rem;
+            padding: 0.5rem 0;
+          }
+          //  * @media screen and (min-width: 1024px) {
+          // *  background-color: $color-white;
+          // *  font-size: 1.5rem;
+          // *  color: $color-orange;
+          // *  }
 
           &:hover {
             @include hover($color-white, $color-secondary);
@@ -47,6 +71,9 @@
       border-radius: 1rem;
       padding: 0.75rem 1rem;
       transition: 1s;
+      @media screen and (min-width: 768px) {
+        margin-top: 1.5rem;
+      }
 
       &:hover {
         @include hover($color-orange, $color-white);
@@ -59,6 +86,9 @@
     margin: 3rem auto;
     font-family: $font-pt;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      letter-spacing: 0.2rem;
+    }
 
     mark {
       background-color: $color-orange;

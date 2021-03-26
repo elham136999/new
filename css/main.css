@@ -18,8 +18,15 @@ html {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .header .logo {
+    font-size: 2.5rem;
+  }
+}
+
 .header .logo-text {
   font-family: "PT Serif";
+  font-size: 2.3rem;
 }
 
 .header-nav .item {
@@ -44,6 +51,13 @@ html {
   transition: 1s;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav .item a li {
+    font-size: 1.75rem;
+    padding: 0.5rem 0;
+  }
+}
+
 .header-nav .item a li:hover {
   background-color: #fff;
   color: #bebbbb;
@@ -62,6 +76,12 @@ html {
   transition: 1s;
 }
 
+@media screen and (min-width: 768px) {
+  .header .btn .button {
+    margin-top: 1.5rem;
+  }
+}
+
 .header .btn .button:hover {
   background-color: #f88949;
   color: #fff;
@@ -72,6 +92,12 @@ html {
   margin: 3rem auto;
   font-family: "PT Serif";
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    letter-spacing: 0.2rem;
+  }
 }
 
 .header-content mark {
@@ -138,9 +164,25 @@ html {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .section-header {
+    letter-spacing: 0.1rem;
+  }
+}
+
 .section-cards {
   width: 100%;
   padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .section-cards .card {
@@ -156,6 +198,13 @@ html {
   align-items: center;
   margin: 1.5rem auto;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-cards .card {
+    width: 17rem;
+    height: 33rem;
+  }
 }
 
 .section-cards .card:hover {
@@ -184,6 +233,12 @@ html {
   letter-spacing: 0.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .content-main {
+    font-size: 1.5rem;
+  }
+}
+
 .content-sub {
   font-size: 1.4rem;
 }
@@ -203,6 +258,12 @@ html {
   color: #f88949;
 }
 
+@media screen and (min-width: 768px) {
+  .price-box .price {
+    font-size: 2.5rem;
+  }
+}
+
 .footer {
   width: 100%;
 }
@@ -216,10 +277,24 @@ html {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-span {
+    letter-spacing: 0.2rem;
+  }
+}
+
 .footer-items {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-items {
+    flex-direction: row;
+  }
 }
 
 .footer-items .item {
@@ -235,6 +310,14 @@ html {
   border-radius: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-items .item {
+    width: 20rem;
+    height: 6.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .footer-items .item .image {
   width: 5rem;
   height: 5rem;
@@ -245,5 +328,11 @@ html {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-items .item .text {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

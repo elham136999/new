@@ -2,18 +2,25 @@
   width: 100%;
 
   &-span {
-    //  * @include position(3rem);
     display: block;
     font-size: 2rem;
     font-family: $font-pt;
     font-weight: bold;
     margin-top: 3rem;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      letter-spacing: 0.2rem;
+    }
   }
   &-items {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .item {
       @include shadow;
@@ -26,6 +33,11 @@
       justify-content: space-around;
       align-items: center;
       border-radius: 6px;
+      @media screen and (min-width: 768px) {
+        width: 20rem;
+        height: 6.5rem;
+        margin-top: 0.5rem;
+      }
 
       .image {
         width: 5rem;
@@ -36,6 +48,9 @@
         font-family: $font-robot;
         text-align: center;
         font-weight: bold;
+        @media screen and (min-width: 768px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
