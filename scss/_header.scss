@@ -1,36 +1,46 @@
 .header {
-  //  * &-box {
-  //  * @media screen and (min-width: 1024px) {
-  // *  display: flex;
-  // *  flex-direction: row;
-  //  * justify-content: space-between;
-  // *  }
-  // *  }
+  @media screen and (min-width: 1024px) {
+    &-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
   .logo {
     font-size: 3rem;
     color: $color-orange;
     text-align: center;
     margin: 1rem auto;
     cursor: pointer;
+
     @media screen and (min-width: 768px) {
       font-size: 2.5rem;
     }
-    //  * @media screen and (min-width: 1024px) {
-    // *  font-size: 2.5rem;
-    // *  text-align: left;
-    // *}
-
-    &-text {
-      font-family: $font-pt;
-      font-size: 2.3rem;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      font-size: 2rem;
+      text-align: left;
+      margin-left: 1rem;
     }
   }
+  &-text {
+    font-family: $font-pt;
+    font-size: 2.3rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+  }
+
   &-nav {
     .item {
       width: 100%;
       display: block;
       font-family: $font-pt;
       font-weight: bold;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
 
       a {
         list-style: none;
@@ -48,11 +58,12 @@
             font-size: 1.75rem;
             padding: 0.5rem 0;
           }
-          //  * @media screen and (min-width: 1024px) {
-          // *  background-color: $color-white;
-          // *  font-size: 1.5rem;
-          // *  color: $color-orange;
-          // *  }
+          @media screen and (min-width: 1024px) {
+            background-color: $color-white;
+            font-size: 1.5rem;
+            color: $color-orange;
+            padding: 0.75rem;
+          }
 
           &:hover {
             @include hover($color-white, $color-secondary);
@@ -74,6 +85,10 @@
       @media screen and (min-width: 768px) {
         margin-top: 1.5rem;
       }
+      @media screen and (min-width: 1024px) {
+        padding: 0.5rem;
+        margin-top: 0;
+      }
 
       &:hover {
         @include hover($color-orange, $color-white);
@@ -89,6 +104,12 @@
     @media screen and (min-width: 768px) {
       letter-spacing: 0.2rem;
     }
+    @media screen and (min-width: 1024px) {
+      width: 35%;
+      font-size: 2rem;
+      margin: 9rem 0 7rem 1.5rem;
+      text-align: left;
+    }
 
     mark {
       background-color: $color-orange;
@@ -99,11 +120,20 @@
 
   .search-box .search {
     text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      position: relative;
+      top: 3.5rem;
+      left: 1rem;
+    }
 
     ::placeholder {
       color: $color-orange;
       padding-left: 1rem;
       font-weight: bold;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.2rem;
+      }
     }
     input {
       @include shadow;
@@ -112,6 +142,11 @@
       outline: none;
       border-radius: 10px;
       border: none;
+      @media screen and (min-width: 1024px) {
+        width: 23rem;
+        height: 4rem;
+        border-radius: 15px;
+      }
     }
 
     .fa-search {
@@ -122,6 +157,11 @@
       color: white;
       position: relative;
       right: 2.5rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+        right: 3.5rem;
+        padding: 0.5rem;
+      }
     }
   }
 }
