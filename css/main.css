@@ -309,14 +309,14 @@ html {
 
 @media screen and (min-width: 768px) {
   .section-cards .card {
-    width: 17rem;
+    width: 18rem;
     height: 33rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .section-cards .card {
-    width: 15rem;
+    width: 17rem;
     height: 33rem;
   }
 }
